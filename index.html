@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO do App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="full">
+    <div class="powderBlueBackground">
+        <div class="blockElement text-center">
+            <img src="https://thumbs.dreamstime.com/z/to-do-list-office-note-reminder-attention-paper-17907802.jpg" alt="To Do Icon" width="350px" height="350px" >
+        </div>
+        <h1 class="text-center upperText">
+            To-DO App
+        </h1>
+        <div class="text-center border container">
+            <form id='taskForm'>
+                <input type="text" placeholder="Task Name" id='taskTitle'> 
+                <input type="submit" class="pending" value="Add Task">
+            </form>
+            
+        </div>
+         <!-- Task Section -->
+         <div class="flex justify-between container">
+            <div class="incompleteTask border mt mb">
+                <h3 class="upperText border-b">
+                    incomplete Task
+                </h3>
+                <ul id="tasks" class="list-style-none">
+                    
+                </ul>
+            </div>
+
+            <!-- completed Task -->
+            <div  class="incompleteTask border mt mb">
+                <h3 class="upperText border-b mt">Completed Task</h3>
+                <ul class="list-style-none" id='completedTask'></ul>
+            </div>
+         </div>
+            
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
